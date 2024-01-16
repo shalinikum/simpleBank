@@ -1,9 +1,9 @@
 CREATE TABLE "account" (
-  "id" int PRIMARY KEY,
+  "id" serial PRIMARY KEY,
   "balance" bigint NOT NULL,
   "owner" varchar NOT NULL,
   "currency" varchar NOT NULL,
-  "created_at" timestamp NOT NULL DEFAULT 'now()'
+  "created_at" timestamp DEFAULT 'now()' NOT NULL 
 );
 
 CREATE TABLE "entrie" (
